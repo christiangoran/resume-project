@@ -46,6 +46,14 @@
     background-color: #61C0BF;
 }
 
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Roboto, sans-serif;
+    font-weight: 300;
+    color: #555555;
+}
+
 /*---------------------------------------------SPECIAL PADDINGS/MARGINS/TEXT*/
 
 h1, h2, h3, h4 {
