@@ -11,6 +11,12 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.1.1/css/hover-min.css"
         type="text/css" />
     <link rel="stylesheet" href="/assets/css/style.css" type="text/css">
+    <script type="text/javascript" src="https://cdn.emailjs.com/sdk/2.2.4/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+            emailjs.init("5E1yc-Bq-rdgwGdEq");
+        })();
+    </script>
     <title>Resume - Christian Göran</title>
 </head>
 
@@ -68,10 +74,12 @@
                 <h5 class="uppercase text-center">Let's work together!</h5>
 
                 <div class="center-form">
-                    <form>
+                    <form onsubmit="return sendMail(this);">
                         <input type="text" name="name" id="fullname" class="form-control" placeholder="Name" required>
-                        <input type="email" name="email" id="emailaddress" class="form-control" placeholder="Email" required>
-                        <textarea rows="5" name="projectsummary" id="projectsummary" class="form-control" placeholder="Project Description" required></textarea>
+                        <input type="email" name="email" id="emailaddress" class="form-control" placeholder="Email"
+                            required>
+                        <textarea rows="5" name="projectsummary" id="projectsummary" class="form-control"
+                            placeholder="Project Description" required></textarea>
                         <div class="form-row text-center">
                             <div class="col">
                                 <button type="submit" class="btn btn-secondary">Send Project Request</button>
@@ -132,6 +140,7 @@
         </div>
 
     </footer>
+    <script src="/assets/js/sendEmail.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
         crossorigin="anonymous"></script>
