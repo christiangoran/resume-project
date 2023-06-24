@@ -432,6 +432,8 @@ table {
 img {
   border: 0;
   max-width: 100%;
+  border-radius: 50%;
+  margin: 15px;
 }
 
 
@@ -488,6 +490,8 @@ img {
   display: block;
   clear: both;
   width: 100%;
+  margin-bottom: 30px;
+  margin-top: 20px;
 }
 
 .repo-list ul {
@@ -504,7 +508,7 @@ img {
   display: block;
   float: left;
   margin-right: 10px;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
   text-decoration: none;
   border: 1px solid #356492;
   -webkit-border-radius: 3px;
